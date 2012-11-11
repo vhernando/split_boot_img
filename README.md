@@ -16,10 +16,10 @@ into an only file, named boot.img, and flashed into the device.
 EXECUTE SPLIT_BOOT_IMG.PY SCRIPT
 
 This splits boot.img, create parts directory and stores there zImage (kernel) and ramdisk.gz.
-**$ python split_boot_img.py -i boot.img -o parts**
+    $ python split_boot_img.py -i boot.img -o parts
 
 E.g: Splitting a boot.img file from my Samsung S5570 tass device shows this result:
-**$ python split_boot_img.py -i boot.img -o foo -v**
+    $ python split_boot_img.py -i boot.img -o foo -v
 
 <pre>
 input file: boot.img
@@ -43,7 +43,7 @@ File foo/ramdisk.gz written (length=3155625).
 </pre>
 
 To rebuild boot.img file (in my tass device):
-**$ mkbootimg --kernel zImage --ramdisk ramdisk.gz --base 13600000 --pagesize 4096 -o boot.img.new**
+    $ mkbootimg --kernel zImage --ramdisk ramdisk.gz --base 13600000 --pagesize 4096 -o boot.img.new
 
 
 
