@@ -13,7 +13,7 @@ into an only file, named boot.img, and flashed into the device.
 **mkbootimg** is the tool which builds a boot.img file from its kernel and ramdisk parts.
 
 
-##EXECUTE SPLIT_BOOT_IMG.PY SCRIPT
+###EXECUTE SPLIT_BOOT_IMG.PY SCRIPT
 
 This splits boot.img, create parts directory and stores there zImage (kernel) and ramdisk.gz.
 
